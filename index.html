@@ -1,11 +1,45 @@
 <!DOCTYPE html>
 <html>
 <head>
+  <title>TITRE</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    .video-wrapper {
+      width: 80%;
+      height: 0;
+      padding-bottom: 56.25%; /* pour une vidéo 16:9 */
+      margin-top: 2em;
+      margin-bottom: 2em;
+    }
+    .video-wrapper iframe {
+      position: absolute;
+      top:0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+    }
+    footer {
+      width: 100%;
+      background-color: #f8f9fa;
+      text-align: center;
+      padding: 1em 0;
+      position: fixed;
+      bottom: 0;
+    }
+  </style>
+</head>
 <link rel="stylesheet" href="style.css"/>
 <title> Keep Kalm </title>
 <meta charset="UTF-8">
-<iframe width="1012" height="569" src="https://www.youtube.com/embed/Pi3XSNZL61A" title="salut c&#39;est cool - olala" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
- <body>
+ <iframe width="1012" height="569" src="https://www.youtube.com/embed/Pi3XSNZL61A" title="salut c&#39;est cool - olala" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+<body>
 <h1> Dobro pojalovat on my pyara page </h1>
 <p> Powered by human brain & ChatGPT </p> 
 </body> 
