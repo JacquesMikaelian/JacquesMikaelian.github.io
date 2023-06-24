@@ -11,6 +11,20 @@
       flex-direction: column;
       align-items: center;
     }
+    .video-container {
+  position: relative;
+  padding-bottom: 56.25%; /* Ratio 16:9 (9 / 16 = 0.5625) */
+  height: 0;
+  overflow: hidden;
+}
+
+.video-container iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
     .video-wrapper {
       width: 80%;
       height: 0;
@@ -38,7 +52,9 @@
 <link rel="stylesheet" href="style.css"/>
 <title> Keep Kalm </title>
 <meta charset="UTF-8">
- <iframe width="1012" height="569" src="https://www.youtube.com/embed/Pi3XSNZL61A" title="salut c&#39;est cool - olala" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+<div class="video-container">
+  <iframe src="https://www.youtube.com/embed/Pi3XSNZL61A" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+</div>
 <body>
 <h1> Dobro pojalovat on my pyara page </h1>
 <footer>
