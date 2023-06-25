@@ -17,54 +17,22 @@
     }
 
     body {
-      position: relative;
-      background-image: url("https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.teepublic.com%2Fsticker%2F41971844-i-love-chatgpt&psig=AOvVaw248O6k3tw-Vb--eLKRA_kz&ust=1687742560833000&source=images&cd=vfe&ved=0CBEQjRxqFwoTCICGtaah3f8CFQAAAAAdAAAAABAE");
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-image: url("https://res.cloudinary.com/teepublic/image/private/s--_i0Zc97M--/t_Resized%20Artwork/c_fit,g_north_west,h_954,w_954/co_262c3a,e_outline:35/co_262c3a,e_outline:inner_fill:35/co_ffffff,e_outline:35/co_ffffff,e_outline:inner_fill:35/co_bbbbbb,e_outline:3:1000/c_mpad,g_center,h_1260,w_1260/b_rgb:eeeeee/c_limit,f_auto,h_630,q_90,w_630/v1679936622/production/designs/41971844_0.jpg");
       background-size: cover;
-      background-repeat: no-repeat;
-      background-position: center;
     }
 
     .youtube-video {
-      position: absolute;
-      bottom: 10px;
-      right: 10px;
       width: 50%;
       height: 50vh;
-      cursor: move;
     }
   </style>
 </head>
 <body>
   <h1>BIENVENUE SUR MA PAGE</h1>
-  <iframe id="youtubeVideo" class="youtube-video" src="https://www.youtube.com/embed/d8Vl9LpFMJ4" title="COMME J&#39;AIME (REMIX FLUTE)" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+  <iframe class="youtube-video" src="https://www.youtube.com/embed/d8Vl9LpFMJ4" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
   <p title="INFOBULLE">TEXTE</p>
-
-  <script>
-    var youtubeVideo = document.getElementById('youtubeVideo');
-    var isDragging = false;
-    var dragStartX;
-    var dragStartY;
-
-    youtubeVideo.addEventListener('mousedown', function(event) {
-      isDragging = true;
-      dragStartX = event.clientX - youtubeVideo.offsetLeft;
-      dragStartY = event.clientY - youtubeVideo.offsetTop;
-      youtubeVideo.style.cursor = 'grabbing';
-    });
-
-    youtubeVideo.addEventListener('mousemove', function(event) {
-      if (isDragging) {
-        var newX = event.clientX - dragStartX;
-        var newY = event.clientY - dragStartY;
-        youtubeVideo.style.left = newX + 'px';
-        youtubeVideo.style.top = newY + 'px';
-      }
-    });
-
-    youtubeVideo.addEventListener('mouseup', function() {
-      isDragging = false;
-      youtubeVideo.style.cursor = 'move';
-    });
-  </script>
 </body>
 </html>
